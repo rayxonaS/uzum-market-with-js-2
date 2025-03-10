@@ -1,6 +1,8 @@
 import { fetchData } from "./fetchData.js";
 import { showProduct } from "./updateUI.js";
 import "./dark-mode.js";
+import { showProducts } from "./updateProducts.js";
+showProducts();
 
 const queryString = window.location.search;
 const id = new URLSearchParams(queryString).get("id");
